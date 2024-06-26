@@ -1,4 +1,5 @@
 import cross from '../assets/cross.svg'
+import './Task.css'
 
 function Task({ done = false, id, task, handleDelete, handleDone}) {
     return (

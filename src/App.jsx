@@ -9,11 +9,9 @@ function App() {
   const [tasks, setTasks] = useState([])
 
   const handleDelete = (id) => {
-    console.log(id, 'i work')
     setTasks((tasks) => tasks.filter((task) => task.id !== id))
    }
   const handleDone = (id) => {
-    console.log(id, 'i work')
     setTasks((tasks) => tasks.map((task) => {
       if (task.id === id) {
         return { ...task, done: !task.done }
